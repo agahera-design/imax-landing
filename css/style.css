@@ -85,7 +85,7 @@ body {
     background:
         linear-gradient(rgba(8, 95, 110, 0.88), rgba(8, 95, 110, 0.88)),
         radial-gradient(circle at top, rgba(50,216,230,0.25), transparent 60%),
-        url("../images/hero-bg.png");
+        url("../images/hero-bg.webp");
     background-size: cover;
     background-position: center;
 }
@@ -579,17 +579,16 @@ body {
     }
 
     .hero-collage {
-    display: block;
-    max-width: 280px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 14px;
+    max-width: 320px;
     margin: 0 auto;
     }
 
     .hero-card-1,
+    .hero-card-2,
     .hero-card-3 {
-        display: none;
-    }
-
-    .hero-card-2 {
         display: block;
         width: 100%;
         height: auto;
