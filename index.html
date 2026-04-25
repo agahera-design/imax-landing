@@ -6,6 +6,14 @@
     <title>iMaxCourier | Conectamos negocios</title>
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YH5KS3WTLX"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-YH5KS3WTLX');
+    </script>
 </head>
 <body>
 
@@ -25,15 +33,21 @@
     </nav>
 
     <header class="hero">
+        
         <div class="hero-container">
-
+           
             <div class="hero-texto">
+                 
                 <h1>Conectamos tu negocio con todo el Perú, sin que te muevas de tu tienda</h1>
 
                 <p class="hero-text">
                     Recogemos mercadería directamente desde proveedores en Las Malvinas, Gamarra, Grau y el Centro de Lima, y la distribuimos de forma rápida, ordenada y segura a más de 260 agencias.
 
                     Ya sea que vendas o compres, nosotros nos encargamos de toda la logística.
+                </p>
+
+                <p style="margin-top:10px; font-size:16px; color:rgba(255,255,255,0.85);">
+                    Ahorras tiempo, evitas traslados y reduces costos operativos.
                 </p>
 
                 <p class="hero-destacado">
@@ -47,11 +61,14 @@
                     <span>Centro de Lima</span>
                 </div>
 
-                <a href="https://wa.me/51929936449?text=Hola,%20quiero%20información%20sobre%20envíos"
-               target="_blank"
-               class="btn-whatsapp">
-               Escríbenos por WhatsApp
+                <a href="https://wa.me/51929936449?text=Hola..."
+                onclick="gtag('event', 'click_whatsapp_hero');"
+                class="btn-whatsapp">
+                Cotizar envío ahora
                 </a>
+                <p style="font-size:14px; margin-top:10px; color:rgba(255,255,255,0.7);">
+                Respuesta rápida por WhatsApp
+                </p>
             </div>
 
             <div class="hero-imagen">
@@ -63,6 +80,7 @@
             </div>
 
         </div>
+
     </header>
 
     <section class="prueba-social">
@@ -70,12 +88,12 @@
 
             <div class="prueba-item">
                 <h3>+<span class="contador" data-target="3000">0</span></h3>
-                <p>clientes activos</p>
+                <p>clientes ya confían en nosotros</p>
             </div>
 
             <div class="prueba-item">
                 <h3>+<span class="contador" data-target="260">0</span></h3>
-                <p>agencias en Lima</p>
+                <p>agencias disponibles</p>
             </div>
 
             <div class="prueba-item">
@@ -96,7 +114,7 @@
 
             <div class="problema-item">
                 <div class="problema-icono">⏱️</div>
-                <p>Pierdes tiempo llevando mercadería a agencias</p>
+                <p>PPierdes tiempo llevando tu mercadería por tu cuenta</p>
             </div>
 
             <div class="problema-item">
@@ -279,16 +297,16 @@
     </section>
 
     <section class="cta-final">
-        <h2>Empieza a enviar sin complicaciones</h2>
+        <h2>Empieza a enviar hoy mismo sin perder tiempo</h2>
 
         <p>
-            Escríbenos por WhatsApp y te ayudamos a coordinar tu envío de forma rápida y ordenada.
+            Escríbenos ahora y te ayudamos a coordinar tu envío en minutos.
         </p>
 
         <a href="https://wa.me/51929936449?text=Hola,%20quiero%20información%20sobre%20envíos"
            target="_blank"
            class="btn-whatsapp">
-           Hablar por WhatsApp ahora
+           Cotizar envío ahora
         </a>
     </section>
 
@@ -297,7 +315,7 @@
    target="_blank"
    aria-label="Escríbenos por WhatsApp">
     
-    <span class="whatsapp-text">¿Tiene alguna consulta?</span>
+    <span class="whatsapp-text">Cotiza tu envío ahora</span>
 
     <span class="whatsapp-icon">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="28" height="28" fill="currentColor">
