@@ -364,227 +364,6 @@ body {
     background-color: #f2f2f2;
 }
 
-@media (max-width: 768px) {
-    .navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-
-    background: #ffffff;
-    backdrop-filter: blur(10px);
-
-    padding: 14px 20px;
-    }
-
-    .navbar-container {
-    width: 100%;
-    justify-content: center;
-    }
-
-    .logo {
-    display: block;
-    font-size: 24px;
-    color: #2d2d2d !important;
-    text-align: center;
-    }
-
-    .logo span {
-    color: #32d8e6 !important;
-    }
-
-    .nav-links {
-    display: none;
-    }
-
-    .hero {
-    min-height: auto;
-    padding: 120px 20px 60px;
-    background: linear-gradient(135deg, #049fb6 0%, #06bad3 50%, #32d8e6 100%);
-    }
-
-    .hero-container {
-    flex-direction: column;
-    text-align: center;
-    gap: 30px;
-    }
-
-    .hero-texto {
-    text-align: center;
-    }
-
-    .hero h1 {
-    font-size: 34px;
-    line-height: 1.15;
-    }
-
-    .hero-text {
-    font-size: 18px;
-    line-height: 1.6;
-    max-width: 100%;
-    }
-   
-    .hero-ilustracion {
-    width: 300px;
-    margin: 0 auto;
-    }
-
-    .como-funciona {
-        padding: 70px 20px;
-    }
-
-    .como-funciona h2 {
-        font-size: 28px;
-        margin-bottom: 34px;
-    }
-
-    .paso {
-        width: 100%;
-        max-width: 320px;
-        padding: 30px 22px;
-    }
-
-    .paso-icono {
-        width: 82px;
-        height: 82px;
-    }
-
-    .paso-svg {
-        width: 55px;
-        height: 55px;
-        transform: translateY(1px);
-    }
-
-    .conglomerados {
-    justify-content: center;
-    }
-
-    .como-funciona h2,
-    .cobertura h2,
-    .cta-final h2 {
-        font-size: 28px;
-    }
-
-    .paso,
-    .cobertura-box {
-    width: 100%;
-    max-width: 320px;
-    }
-
-    .cta-final p {
-    font-size: 16px;
-    }
-   
-    .btn-whatsapp {
-    width: 100%;
-    max-width: 320px;
-    justify-content: center;
-    text-align: center;
-    font-size: 16px;
-    padding: 14px 20px;
-    }
-
-    .icono-wsp {
-    width: 30px;
-    height: 30px;
-    }
-
-    .icono-wsp svg {
-        width: 20px;
-        height: 20px;
-    }
-    
-    .whatsapp-float {
-    right: 14px;
-    bottom: 14px;
-    }
-
-    .whatsapp-text {
-    display: none;
-    }
-
-    .whatsapp-icon {
-    width: 60px;
-    height: 60px;
-    }
-
-    .cobertura {
-    padding: 70px 20px;
-    }
-
-    .cobertura-container {
-        grid-template-columns: 1fr;
-        gap: 34px;
-        text-align: center;
-    }
-
-    .cobertura-mapa {
-        order: 1;
-    }
-
-    .cobertura-info {
-        order: 2;
-    }
-
-    .cobertura h2 {
-        font-size: 28px;
-        margin-bottom: 28px;
-    }
-
-    .cobertura-card {
-        text-align: left;
-        padding: 18px;
-    }
-
-    .cobertura-icono {
-        width: 50px;
-        height: 50px;
-        min-width: 50px;
-    }
-
-    .cobertura-icono img {
-        width: 28px;
-        height: 28px;
-    }
-
-    .cobertura-mapa img {
-        max-width: 330px;
-    }
-
-    .cobertura-badge {
-        font-size: 14px;
-    }
-
-    .confianza-logos img {
-    height: 50px;
-    max-width: 100px;
-    }
-    .confianza h2 {
-    font-size: 26px;
-    }
-
-    .confianza-beneficios {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .confianza-cta {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .footer-container {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .footer-col {
-        width: 100%;
-    }    
-
-
-}
 
 .whatsapp-float {
     position: fixed;
@@ -861,4 +640,224 @@ body {
     text-align: center;
     font-size: 13px;
     color: #aaa;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    background: #ffffff;
+    backdrop-filter: blur(10px);
+
+    padding: 14px 20px;
+    }
+
+    .navbar-container {
+    width: 100%;
+    justify-content: center;
+    }
+
+    .logo {
+    display: block;
+    font-size: 24px;
+    color: #2d2d2d !important;
+    text-align: center;
+    }
+
+    .logo span {
+    color: #32d8e6 !important;
+    }
+
+    .nav-links {
+    display: none;
+    }
+
+    .hero {
+    min-height: auto;
+    padding: 120px 20px 60px;
+    background: linear-gradient(135deg, #049fb6 0%, #06bad3 50%, #32d8e6 100%);
+    }
+
+    .hero-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+    }
+
+    .hero-texto {
+    text-align: center;
+    }
+
+    .hero h1 {
+    font-size: 34px;
+    line-height: 1.15;
+    }
+
+    .hero-text {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 100%;
+    }
+   
+    .hero-ilustracion {
+    width: 300px;
+    margin: 0 auto;
+    }
+
+    .como-funciona {
+        padding: 70px 20px;
+    }
+
+    .como-funciona h2 {
+        font-size: 28px;
+        margin-bottom: 34px;
+    }
+
+    .paso {
+        width: 100%;
+        max-width: 320px;
+        padding: 30px 22px;
+    }
+
+    .paso-icono {
+        width: 82px;
+        height: 82px;
+    }
+
+    .paso-svg {
+        width: 55px;
+        height: 55px;
+        transform: translateY(1px);
+    }
+
+    .conglomerados {
+    justify-content: center;
+    }
+
+    .como-funciona h2,
+    .cobertura h2,
+    .cta-final h2 {
+        font-size: 28px;
+    }
+
+    .paso,
+    .cobertura-box {
+    width: 100%;
+    max-width: 320px;
+    }
+
+    .cta-final p {
+    font-size: 16px;
+    }
+   
+    .btn-whatsapp {
+    width: 100%;
+    max-width: 320px;
+    justify-content: center;
+    text-align: center;
+    font-size: 16px;
+    padding: 14px 20px;
+    }
+
+    .icono-wsp {
+    width: 30px;
+    height: 30px;
+    }
+
+    .icono-wsp svg {
+        width: 20px;
+        height: 20px;
+    }
+    
+    .whatsapp-float {
+    right: 14px;
+    bottom: 14px;
+    }
+
+    .whatsapp-text {
+    display: none;
+    }
+
+    .whatsapp-icon {
+    width: 60px;
+    height: 60px;
+    }
+
+    .cobertura {
+    padding: 70px 20px;
+    }
+
+    .cobertura-container {
+        grid-template-columns: 1fr;
+        gap: 34px;
+        text-align: center;
+    }
+
+    .cobertura-mapa {
+        order: 1;
+    }
+
+    .cobertura-info {
+        order: 2;
+    }
+
+    .cobertura h2 {
+        font-size: 28px;
+        margin-bottom: 28px;
+    }
+
+    .cobertura-card {
+        text-align: left;
+        padding: 18px;
+    }
+
+    .cobertura-icono {
+        width: 50px;
+        height: 50px;
+        min-width: 50px;
+    }
+
+    .cobertura-icono img {
+        width: 28px;
+        height: 28px;
+    }
+
+    .cobertura-mapa img {
+        max-width: 330px;
+    }
+
+    .cobertura-badge {
+        font-size: 14px;
+    }
+
+    .confianza-logos img {
+    height: 50px;
+    max-width: 100px;
+    }
+    .confianza h2 {
+    font-size: 26px;
+    }
+
+    .confianza-beneficios {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .confianza-cta {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-col {
+        width: 100%;
+    }    
 }
