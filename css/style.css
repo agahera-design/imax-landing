@@ -11,17 +11,9 @@ body {
 }
 
 .navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-
-    z-index: 1000;
-
-    background: #ffffff; /* siempre blanco */
+    position: relative;
+    background: #ffffff;
     box-shadow: 0 6px 20px rgba(0,0,0,0.06);
-
-    transition: none;
 }
 
 .navbar-container {
@@ -31,35 +23,35 @@ body {
 
     max-width: 1200px;
     margin: 0 auto;
-    padding: 22px 20px;
+    padding: 10px 20px;
 }
 
 .logo {
-    font-size: 40px;
-    font-weight: 700;
+    font-size: 32px;
+    font-weight: 800;
     letter-spacing: -0.5px;
     color: #2d2d2d;
 }
 
 .logo span {
-    color: #32d8e6;
-    font-weight: 700;
+    color: #049fb6;
+    font-weight: 800;
 }
 
 .nav-links {
     display: flex;
-    gap: 24px;
+    gap: 15px;
 }
 
 .nav-links a {
-    text-decoration: none;
     color: #2d2d2d;
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 700;
+    text-decoration: none;
 }
 
 .nav-links a:hover {
-    color: #dffbff;
+    color: #049fb6;
 }
 
 .hero {
@@ -68,7 +60,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 140px 20px 90px;
+    padding: 70px 20px 90px;
     background: linear-gradient(135deg, #049fb6 0%, #06bad3 50%, #32d8e6 100%);
 }
 
@@ -147,7 +139,7 @@ body {
 
     text-decoration: none;
 
-    border: 1px solid rgba(0,0,0,0.05); /* 👈 AQUÍ */
+    border: 2px solid #25D366;
 
     box-shadow: 0 10px 25px rgba(0,0,0,0.15);
     transition: 0.3s ease;
@@ -156,6 +148,13 @@ body {
 .btn-whatsapp:hover {
     transform: translateY(-2px);
     box-shadow: 0 14px 30px rgba(0,0,0,0.18);
+    background-color: #25D366;
+    color: white;
+}
+
+.btn-whatsapp:hover .icono-wsp {
+    background-color: white;
+    color: #25D366;
 }
 
 .icono-wsp {
@@ -200,12 +199,17 @@ body {
     padding: 34px 26px;
     border-radius: 18px;
     width: 280px;
+
+     border: 1.8px solid #06bad3; /* 👈 color del hero */
+
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
     transition: 0.3s ease;
 }
 
 .paso:hover {
     transform: translateY(-6px);
+    border-color: #049fb6; /* más oscuro */
+    box-shadow: 0 14px 30px rgba(6,186,211,0.25);
 }
 
 .paso-icono {
@@ -260,7 +264,7 @@ body {
     display: inline-block;
     margin-bottom: 12px;
     color: #06bad3;
-    font-size: 14px;
+    font-size: 24px;
     font-weight: 800;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -284,10 +288,20 @@ body {
     display: flex;
     align-items: flex-start;
     gap: 16px;
+
     background-color: #f8fbfc;
     padding: 20px;
     border-radius: 18px;
+
+    border: 1.2px solid rgba(6,186,211,0.4); /* 👈 ajuste */
+
     box-shadow: 0 10px 24px rgba(0,0,0,0.05);
+}
+
+.cobertura-card:hover {
+    border-color: #06bad3;
+    transform: translateY(-4px);
+    box-shadow: 0 14px 28px rgba(6,186,211,0.18);
 }
 
 .cobertura-icono {
@@ -338,9 +352,9 @@ body {
 }
 
 .cta-final {
-    padding: 100px 20px;
+    padding: 100px 20px 70px;
     text-align: center;
-    background: #06bad3;
+    background: linear-gradient(135deg, #049fb6 0%, #06bad3 50%, #32d8e6 100%);
     color: white;
 }
 
@@ -357,13 +371,26 @@ body {
 
 .cta-final .btn-whatsapp {
     background-color: white;
-    color: #2d2d2d;
+    color: #25D366; /* 👈 verde WhatsApp */
+    border: 2px solid #25D366;
 }
 
 .cta-final .btn-whatsapp:hover {
     background-color: #f2f2f2;
 }
 
+.cta-datos {
+    margin-top: 34px;
+    display: flex;
+    justify-content: center;
+    gap: 28px;
+    flex-wrap: wrap;
+}
+
+.cta-datos p {
+    font-size: 14px;
+    color: rgba(255,255,255,0.95);
+}
 
 .whatsapp-float {
     position: fixed;
@@ -575,26 +602,33 @@ body {
     max-width: 120px;
     object-fit: contain;
 
-    filter: grayscale(100%);
-    opacity: 0.9;
+    filter: none;
+    opacity: 1;
 
-    transition: 0.3s ease;
+    transition: transform 0.3s ease;
 }
 
 .confianza-logos img:hover {
-    filter: grayscale(0%);
-    opacity: 1;
-    transform: scale(1.05);
+    transform: scale(1.08);
 }
 
 .confianza-cta {
     background: #ffffff;
     padding: 30px;
     border-radius: 18px;
+
+    border: 1px solid rgba(0,0,0,0.08); /* 👈 borde gris fino */
+
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 20px;
+
+    box-shadow: 0 8px 20px rgba(0,0,0,0.04); /* más suave */
+}
+
+.confianza-cta:hover {
+    border-color: rgba(0,0,0,0.12);
 }
 
 .confianza-texto h3 {
@@ -605,54 +639,20 @@ body {
     color: #555;
 }
 
-.footer {
+.footer-simple {
     background: #0f1f2e;
-    color: white;
-    padding: 60px 20px 30px;
-}
-
-.footer-container {
-    max-width: 1100px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    gap: 30px;
-    flex-wrap: wrap;
-}
-
-.footer-col {
-    width: 220px;
-}
-
-.footer-col h3,
-.footer-col h4 {
-    margin-bottom: 10px;
-}
-
-.footer-col p {
-    font-size: 14px;
-    color: #ccc;
-    line-height: 1.5;
-}
-
-.footer-bottom {
-    margin-top: 40px;
-    text-align: center;
-    font-size: 13px;
     color: #aaa;
+    text-align: center;
+    padding: 22px 20px;
+    font-size: 13px;
 }
 
 @media (max-width: 768px) {
     .navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
+    position: relative;
     width: 100%;
-
     background: #ffffff;
-    backdrop-filter: blur(10px);
-
-    padding: 14px 20px;
+    padding: 8px 16px;
     }
 
     .navbar-container {
@@ -662,13 +662,13 @@ body {
 
     .logo {
     display: block;
-    font-size: 24px;
+    font-size: 20px;
     color: #2d2d2d !important;
     text-align: center;
     }
 
     .logo span {
-    color: #32d8e6 !important;
+    color: #049fb6 !important;
     }
 
     .nav-links {
@@ -720,6 +720,13 @@ body {
         width: 100%;
         max-width: 320px;
         padding: 30px 22px;
+        border: 1px solid rgba(6,186,211,0.3);
+    }
+
+    .paso:hover,
+    .cobertura-card:hover {
+        transform: none;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.08);
     }
 
     .paso-icono {
@@ -751,6 +758,16 @@ body {
 
     .cta-final p {
     font-size: 16px;
+    }
+
+    .cta-final {
+    padding: 80px 20px 55px;
+    background: linear-gradient(135deg, #049fb6 0%, #06bad3 50%, #32d8e6 100%);
+    }
+
+    .cta-datos {
+        flex-direction: column;
+        gap: 8px;
     }
    
     .btn-whatsapp {
@@ -851,13 +868,4 @@ body {
         text-align: center;
     }
 
-    .footer-container {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .footer-col {
-        width: 100%;
-    }    
 }
